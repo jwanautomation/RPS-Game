@@ -87,3 +87,14 @@ const determineWinner = (userChoice, computerChoice) => {
     }
   }
 };
+
+// TEST 3 - DETERMINE WINNER
+
+// CHEAT CODE VALIDATION
+// console.log(determineWinner("bomb", "paper"));
+// USER WINS
+// console.log(determineWinner("scissors", "paper"));
+// COMPUTER WINS
+// console.log(determineWinner("rock", "paper"));
+// TIE
+// console.log(determineWinner("paper", "paper"));

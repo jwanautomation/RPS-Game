@@ -98,3 +98,15 @@ const determineWinner = (userChoice, computerChoice) => {
 // console.log(determineWinner("rock", "paper"));
 // TIE
 // console.log(determineWinner("paper", "paper"));
+
+// FUNCTION 4 - PLAY GAME
+const playGame = () => {
+  const userChoice = getUserChoice("paper");
+  const computerChoice = getComputerChoice();
+  console.log("You threw: " + userChoice);
+  console.log("The computer threw: " + computerChoice);
+
+  console.log(determineWinner(userChoice, computerChoice));
+};
+
+playGame();

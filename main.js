@@ -46,3 +46,6 @@ const getComputerChoice = () => {
       return "scissors";
   }
 };
+
+// TEST 2 - COMPUTER CHOICES (EXECUTE MULTIPLE TIMES TO VALIDATE)
+// console.log(getComputerChoice());

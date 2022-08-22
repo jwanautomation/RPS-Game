@@ -30,3 +30,19 @@ const getUserChoice = (userInput) => {
 // console.log(getUserChoice("bomb"));
 // INVALID INPUT APPLE
 // console.log(getUserChoice("apple"));
+
+// COMPUTER CHOICE - FUNCTION 2
+const getComputerChoice = () => {
+  // INTEGER BETWEEN 0 AND 2 (I.E. 3 CHOICES: ROCK, PAPER OR SCISSORS)
+  let randomChoice = Math.floor(Math.random() * 3);
+
+  // SWITCH CASE - ASSIGN INTEGERS BETWEEN 0 AND 2 TO VALID CHOICES
+  switch (randomChoice) {
+    case 0:
+      return "rock";
+    case 1:
+      return "paper";
+    case 2:
+      return "scissors";
+  }
+};

@@ -49,3 +49,41 @@ const getComputerChoice = () => {
 
 // TEST 2 - COMPUTER CHOICES (EXECUTE MULTIPLE TIMES TO VALIDATE)
 // console.log(getComputerChoice());
+
+// FUNCTION 3 - DETERMINE WINNER
+const determineWinner = (userChoice, computerChoice) => {
+  // CHEAT CONDITION
+  if (userChoice === "bomb") {
+    return "User wins!";
+  }
+
+  // TIE CONDITION
+  if (userChoice === computerChoice) {
+    return "The game is tied!";
+  }
+
+  // GAME CONDITIONS
+  if (userChoice === "rock") {
+    if (computerChoice === "paper") {
+      return "Computer wins!";
+    } else {
+      return "User wins!";
+    }
+  }
+
+  if (userChoice === "paper") {
+    if (computerChoice === "scissors") {
+      return "Computer wins!";
+    } else {
+      return "User wins!";
+    }
+  }
+
+  if (userChoice === "scissors") {
+    if (computerChoice === "rock") {
+      return "Computer wins!";
+    } else {
+      return "User wins!";
+    }
+  }
+};
